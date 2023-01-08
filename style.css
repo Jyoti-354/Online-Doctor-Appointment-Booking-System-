@@ -1,0 +1,345 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* header styling starts */
+.heading{
+  background-color: lavender;
+  height: auto;
+  min-width: 100%;
+}
+header{
+min-width: 100%;
+/* background-color: transparent; */
+}
+header nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding:0 100px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo-img{
+  height: 90px;
+}
+nav ul{
+  list-style-type: none;
+}
+nav ul li{
+  display: inline-block;
+  margin:0 15px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+nav ul li button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: lavender;
+  font-size: 15px;
+}
+nav ul li button:hover{
+  color:red;
+}
+nav ul li a:hover{
+  color:red;
+}
+
+/* header styling  ends */
+
+/* login form styling starts */
+#login-form{
+  display: none;
+}  
+.form-box{
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 2% auto;
+  background: rgba(0.1,0,0,0.1);
+  padding: 10px;
+  overflow: hidden;
+}
+.button-box{
+  width: 220px;
+  height: auto;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+.toggle-btn{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: #F3C693;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.input-group-login{
+  top: 150px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+
+.input-group-register{
+  top: 120px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+.input-field{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  border-top: 0;
+  outline: none;
+  background: transparent;
+}
+.submit-btn{
+  width: 85%;
+  height: auto;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: 15px;
+  background: #F3C693;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+.check-box{
+  margin: 30px 10px 34px 0;
+}
+span{
+  color: #777;
+  font-size: 12px;
+  bottom: 110px;
+  position: absolute;
+  padding:5px  15px;
+}
+h6{
+  color: #777;
+}
+ #login{
+  left: 50px;
+} 
+#login input{
+  color: black;
+  font-size: 15;
+}
+#register{
+  left:450px;
+}
+#register input{
+  color: black;
+  font-size: 15;
+} 
+
+
+/* login form styling ends  */
+
+/* home section styling starts */
+
+.home{
+  padding:0;
+  height: 700px;
+  width: 100%;
+  display:flex;
+  flex-flow: column;
+  justify-content: center; 
+  background-image: url(/images/doctor\ 2\ background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+  background-attachment: fixed;
+  text-align: center;
+  text-decoration: none;
+
+}
+h1{
+  padding: 0%;
+  color:black;
+}
+p{
+  font-size: 20px;
+  color:black;
+}
+.btn{
+  font-size: 20px;
+  background-color: lavender;
+  padding: 10px 25px;
+  border-radius: 30px;
+  color:black;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: lavenderblush;
+}
+/* home section styling ends  */
+
+/* about section styling starts */
+h1{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  padding-top: 1rem;;
+}
+.about{
+  display: flex;
+  justify-content: center;
+  text-align:center;
+ flex-wrap: wrap;  
+}
+ .about .image{ 
+  flex: 1 1 40rem;
+}  
+.about .image img{
+  height: 45vh;
+  width: 50%;
+  padding-top: 1rem;
+}
+.about .content{
+  flex: 1 1 40rem;
+}
+.about .content p{
+  color: black;
+  font-size: 20;
+  padding: 1rem 3rem 0 0;
+}
+.about .content .btn{
+  background-color: lavender;
+} 
+.about .content .btn:hover{
+  background-color: lavenderblush;
+} 
+/* about section styling ends  */
+
+/* contact styling starts  */
+.contact{
+background:none;
+}
+.contact .Heading{
+  color: black;
+  padding:1rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.contact .row{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact .row form{
+ flex:  1 1 50rem;
+ background-color: none;
+ padding: 1rem;
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ margin-top: 3rem;
+ align-items: flex-start;
+}
+.contact .row form .box{
+  height: 5rem;
+  width: 49%;
+  border: 0.1rem solid black;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  font-size: 1.7 rem;
+  color: black;
+  background: none;
+  text-transform: none;
+}
+.contact .row form .box:focus{
+  border-color: black;
+}
+  
+.contact .row form .box::placeholder{
+  text-transform: capitalize;
+}
+.contact .row form .address{
+  height: 15rem;
+  padding: 1rem;
+  resize: none;
+  width: 100%;
+}
+.contact .row .image img{
+ height: 55vh;
+ margin-top: 6rem;
+}
+/* contact styling ends  */ 
+
+/* footer section styling starts */
+  
+.footer{
+ background-color: #333;
+}
+.footer .box-container{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+.footer .box-container .box{
+  margin: 1.5rem;
+  text-align: center;
+  flex: 1 1 25rem;
+}
+.footer .box-container .box h2{
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer .box-container .box a{
+  font-size: 1rem;
+  display: block;
+  padding: 0.5rem 0;
+  color: #eee;
+}
+.footer .box-container .box a:hover{
+  text-decoration: none;
+}
+.footer .credit{
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  color: #eee;
+  background: #111;
+  text-align: center;
+  font-weight: normal;
+}
+.footer .credit a{
+  color:#f39c15;
+}
+  
+  /* footer section ends  */
